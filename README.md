@@ -6,6 +6,10 @@ And this project is kind of clone coding of https://justinclanglinais.medium.com
 
 ## Available Scripts
 
+In the project directory, pleasse install three js by 
+
+### 'npm i three'
+
 In the project directory, you can run:
 
 ### `npm start`
