@@ -2,7 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-And this project is kind of clone coding of https://justinclanglinais.medium.com/using-three-js-to-make-a-3d-scene-in-react-js-e24178098eee
+https://user-images.githubusercontent.com/23206392/153428760-8ab38c11-b8f8-49d8-9ad9-a0982daf16a6.mp4
+
+And this project was kind of clone coding of https://justinclanglinais.medium.com/using-three-js-to-make-a-3d-scene-in-react-js-e24178098eee
 
 ## Available Scripts
 
