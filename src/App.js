@@ -41,6 +41,7 @@
 // todo: this is function
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
+import waterImage from './textures/water.jpg'
 
 const App = () => {
 
@@ -55,14 +56,18 @@ const App = () => {
     renderer.setSize( window.innerWidth, window.innerHeight );
     mountRef.current.appendChild( renderer.domElement );
 
-    var geometry = new THREE.BoxGeometry( 2, 2, 2 );
-    var material = new THREE.MeshStandardMaterial( { color: 0x00ff00 } );
+    var geometry = new THREE.BoxGeometry( 3, 3, 3 );
+    var texture = new THREE.TextureLoader().load( waterImage );
+
+    // var material = new THREE.MeshStandardMaterial( { color: 0x00ff00 } );
+    var material = new THREE.MeshBasicMaterial({map: texture})
+
     var cube = new THREE.Mesh( geometry, material );
 
     scene.add( cube );
 
-    const light = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 )
-    scene.add(light)
+    // const light = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 )
+    // scene.add(light)
 
     camera.position.z = 5;
 
@@ -88,7 +93,7 @@ const App = () => {
 
   return (
     <div ref={mountRef}>
-        <h1 style={{marginLeft: '10px', fontWeight: 900, fontSize: 30}}>THIS IS THREEJS AND REACTJS PRACTICE</h1>    
+        {/* <h1 style={{marginLeft: '10px', fontWeight: 900, fontSize: 30}}>YOUR METAVERSE PET</h1>     */}
     </div>
   );
 }
