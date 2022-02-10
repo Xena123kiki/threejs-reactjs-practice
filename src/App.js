@@ -63,7 +63,7 @@ const App = () => {
 
     const light = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 )
     scene.add(light)
-    
+
     camera.position.z = 5;
 
     var animate = function () {
@@ -88,7 +88,7 @@ const App = () => {
 
   return (
     <div ref={mountRef}>
-        <h1 style={{marginLeft: '15px', fontWeight: 900}}>THIS IS THREEJS AND REACTJS PRACTICE</h1>    
+        <h1 style={{marginLeft: '10px', fontWeight: 900, fontSize: 30}}>THIS IS THREEJS AND REACTJS PRACTICE</h1>    
     </div>
   );
 }
