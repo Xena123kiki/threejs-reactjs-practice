@@ -16,15 +16,16 @@ class App extends Component {
       scene.add( cube );
       const light = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 );
       scene.add( light );
-camera.position.z = 2;
-var animate = function () {
+      
+      camera.position.z = 2;
+      var animate = function () {
           requestAnimationFrame( animate );
           cube.rotation.x += 0.01;
           cube.rotation.y += 0.01;
           cube.rotation.z += 0.01;
           renderer.render( scene, camera );
       };
-        animate();
+      animate();
   }
   render() {
       return (
